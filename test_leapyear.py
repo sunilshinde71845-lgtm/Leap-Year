@@ -1,4 +1,4 @@
-from leapyear import isLeapYear
+from leapyear import leapyear
 
 def test_leap_year():
     assert isLeapYear(2024) == "Leap Year"

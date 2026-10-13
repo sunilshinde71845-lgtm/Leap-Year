@@ -1,9 +1,13 @@
-def isLeapYear(year):
-    return year % 400 == 0 or (year % 4 == 0 and year % 100 != 0)
+def leapyear(year):
+    if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+        return True
+    else:
+        return False
 
-year = int(input("Enter year: "))
+if __name__ == "__main__":
+    y = int(input("Enter a year: "))
 
-if isLeapYear(year):
-    print("Leap Year")
-else:
-    print("Not a Leap Year")
+    if leapyear(y):
+        print("Leap year")
+    else:
+        print("Not a leap year")
